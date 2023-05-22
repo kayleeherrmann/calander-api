@@ -16,8 +16,8 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained();
             $table->foreignId('category_id')->constrained()->nullable();
             $table->text('title');
-            $table->date('start');
-            $table->date('end');
+            $table->string('start');
+            $table->string('end');
             $table->timestamps();
         });
     }
